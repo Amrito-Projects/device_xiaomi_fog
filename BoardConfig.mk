@@ -6,6 +6,11 @@
 
 DEVICE_PATH := device/xiaomi/fog
 
+# Ignore overriding commands errors
+BUILD_BROKEN_DUP_RULES := true
+
+RELAX_USES_LIBRARY_CHECK=true
+
 # A/B
 BOARD_USES_RECOVERY_AS_BOOT := true
 AB_OTA_UPDATER := true
